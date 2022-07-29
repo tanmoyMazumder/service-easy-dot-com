@@ -1,0 +1,138 @@
+{% extends 'database/base.html' %}
+{% block title %}Book service{% endblock title %}
+{% block corner %}<a href="{% url 'profileInfo' %}">User Profile</a>{% endblock %}
+{% block bill %}<li class="lvl1"><a href="{% url 'bill' %}"><b>Bill History</b></a></li>{% endblock %}
+
+
+<!--Body Content-->
+{% block content %}
+<br><br>
+<h2>{{message}}</h2>
+<br><br>
+<section class="page-search"></section>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 " style="left:20%;">
+            <!-- Advance Search -->
+            <div class="advance-search">
+                <form method="post" action="bookNew">
+                    {% csrf_token %}
+                    <div class="form-row">
+                        <div class="form-group col-md-8">
+                            <div class="widget category-list">
+                                <!-- <label for="others"></label> -->
+                                <h4 class="widget-header">Select Category</h4>
+                                <select name="book[category]" id="category">
+                                    <option class="lvl-2" disabled="True" selected >-- Select Category --</option>
+                                    {% for result in Service_type %}
+                                    <option class="lvl-2">{{result.category}}</option>
+                                    {% endfor%}
+                                </select>
+
+                            </div>
+
+                        </div>
+                        <!-- <div class="form-group col-md-4"> -->
+                        <input type="text" name="book[problem]" id="inputtext4" placeholder="Describe your problem here">
+                        <!-- </div> -->
+                        <br><br><br>
+
+                        <!-- <div class="form-group col-md-3"> -->
+                        <input type="text" name="book[address]" id="inputLocation4" placeholder="Your Address">
+                        <!-- </div> -->
+
+                        <section class="section-sm">
+                            <div class="container">
+                               
+                                            <div class="row">
+                                                <div class="col-md-12" style="left:-1%;">
+                                                    <div class="widget category-list">
+                                                        <label for="others"></label>
+                                                        <h4 class="widget-header " >Select Area</h4>
+                                                        <select name="book[area]" id="location">
+                                                            <option value="volvo" disabled="True" selected >-- Select Area --</option>
+                                                            {% for area in Area%}
+                                                            <option value="area">{{area.name}}</option>
+                                                            {% endfor%}
+                                                        </select>
+                                                        <br><br>
+                        
+                        
+                                                        </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                            <!--End Body Content-->
+                                            <div class="widget product-shorting" style="left:-2%">
+                                                <h4 class="widget-header">Initial Charge</h4>
+                                                <div class="form-check" style="left:-2%">
+                                                    <h6>200 Taka Only!</h6>
+                                                    <!-- <label class="form-check-label">
+                                        <h6>200 Taka Only!</h6>
+                                    </label> -->
+                                                </div>
+                        
+                                            </div>
+                        
+                                        </div>
+                                    </div>
+                        
+                        
+                                </div>
+                            </div>
+                            </div>
+                            </div>
+                        </section>
+                        <div class="row">
+                            <div class="text-center col-12 col-sm-12 col-md-12 col-lg-12">
+                                <input type="submit" class="btn mb-3" value="Book Now!">
+                            </div>
+                        </div>
+
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<br><br>
+
+</div>
+</div>
+</div>
+
+<!--End Page Title-->
+
+
+
+{% endblock %}
+<!--============================
+=            Footer            =
+=============================-->
+
+<!--Scoll Top-->
+<span id="site-scroll"><i class="icon anm anm-angle-up-r"></i></span>
+<!--End Scoll Top-->
+
+<!-- Including Jquery -->
+<script src="../../static/js/vendor/jquery-3.3.1.min.js"></script>
+<script src="../../static/js/vendor/jquery.cookie.js"></script>
+<script src="../../static/js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="../../static/js/vendor/wow.min.js"></script>
+<!-- Including Javascript -->
+<script src="../../static/js/bootstrap.min.js"></script>
+<script src="../../static/js/plugins.js"></script>
+<script src="../../static/js/popper.min.js"></script>
+<script src="../../static/js/lazysizes.js"></script>
+<script src="../../static/js/main.js"></script>
+</div>
+</body>
+
+<!-- belle/register.html   11 Nov 2019 12:22:27 GMT -->
+
+</html>
+<!--End Top Header-->

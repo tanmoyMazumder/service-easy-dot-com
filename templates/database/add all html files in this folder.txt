@@ -1,0 +1,22 @@
+< class="widget change-password">
+                                    <h2 class="widget-header user">Edit Password</h2>
+                                    <form action="#">
+                                        <!-- Current Password -->
+                                        <div class="form-group">
+                                            <label for="current-password" style="background-color:white;">Current Password</label>
+                                            <input type="password" class="form-control" id="current-password">
+                                        </div>
+                                        <!-- New Password -->
+                                        <div class="form-group">
+                                            <label for="new-password"  style="background-color:white;">New Password</label>
+                                            <input type="password" class="form-control" id="new-password">
+                                        </div>
+                                        <!-- Confirm New Password -->
+                                        <div class="form-group">
+                                            <label for="confirm-password"  style="background-color:white;">Confirm New Password</label>
+                                            <input type="password" class="form-control" id="confirm-password">
+                                        </div>
+                                        <!-- Submit Button -->
+                                        <button class="btn btn-transparent">Change Password</button> <br> <br>
+                                    </form>
+                    -------------------------------------------------------

@@ -1,0 +1,132 @@
+{% extends 'database/base.html' %}
+{% block title %}Bill {% endblock title %}
+{% block corner %}<li><a href="{% url 'profileInfo' %}">User Profile</a></li>{% endblock %}
+
+<!--Body Content-->
+{% block content %}
+<div id="page-content">
+    <!--Page Title-->
+    <div class="page section-header text-center">
+        <div class="page-title">
+            <div class="wrapper">
+                <h1 class="page-width"><strong>Bill History</strong</h1>
+            </div>
+        </div>
+    </div>
+    <!--End Page Title-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 main-col offset-md-3">
+                <div class="mb-4">
+                    <form method="post" action="#" id="Customerbill" accept-charset="UTF-8" class="contact-form">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-group">
+                                    <label for="ServiceProviderName">Service Provider Name</label>
+                                    <!-- EIKHANE PROVIDER ER NAAM ASHBE -->
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-group">
+                                    <label for="ServiceProviderName">Service Provider Number</label>
+                                                                        <!-- EIKHANE PROVIDER ER NUMBER ASHBE -->
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-group">
+                                    <label for="ServiceName">Service Name</label>
+                                                                        <!-- EIKHANE SERVICE ER NAAM ASHBE -->
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-group">
+                                    <label for="DateofService">Date of Service</label>
+                                                                        <!-- EIKHANE NAAM ASHBE -->
+
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-group">
+                                    <label for="TotalBill">Total Bill</label>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-group">
+                                    <label for="ServiceRating">Rating</label>
+                                    <input type="text" name="service[rating]" placeholder="" id="ServiceRating" class=""
+                                        autocorrect="off" autocapitalize="off" autofocus="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-group">
+                                    <label for="Review">Review</label>
+                                    <input type="text" name="service[review]" placeholder="" id="Review" class=""
+                                        autocorrect="off" autocapitalize="off" autofocus="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="text-center col-12 col-sm-12 col-md-12 col-lg-12">
+                                <!-- <a href="index.html"> <input type="submit" class="btn mb-3" value="done"> </a> -->
+                                <a href="{% url 'index_loggedin' %}" class="btn btn--has-icon-after"> Done <i class="fa fa-caret-right"
+                                        aria-hidden="true"></i></a>
+
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+<!--End Body Content-->
+
+<!--Scoll Top-->
+<span id="site-scroll"><i class="icon anm anm-angle-up-r"></i></span>
+<!--End Scoll Top-->
+
+     <!-- Including Jquery -->
+     <script src="../../static/js/vendor/jquery-3.3.1.min.js"></script>
+     <script src="../../static/js/vendor/jquery.cookie.js"></script>
+     <script src="../../static/js/vendor/modernizr-3.6.0.min.js"></script>
+     <script src="../../static/js/vendor/wow.min.js"></script>
+     <!-- Including Javascript -->
+     <script src="../../static/js/bootstrap.min.js"></script>
+     <script src="../../static/js/plugins.js"></script>
+     <script src="../../static/js/popper.min.js"></script>
+     <script src="../../static/js/lazysizes.js"></script>
+     <script src="../../static/js/main.js"></script>
+</div>
+</body>
+
+<!-- belle/register.html   11 Nov 2019 12:22:27 GMT -->
+</html>an id="site-scroll"><i class="icon anm anm-angle-up-r"></i></span>
+    <!--End Scoll Top-->
+    
+     <!-- Including Jquery -->
+     <script src="../../static/js/vendor/jquery-3.3.1.min.js"></script>
+     <script src="../../static/js/vendor/jquery.cookie.js"></script>
+     <script src="../../static/js/vendor/modernizr-3.6.0.min.js"></script>
+     <script src="../../static/js/vendor/wow.min.js"></script>
+     <!-- Including Javascript -->
+     <script src="../../static/js/bootstrap.min.js"></script>
+     <script src="../../static/js/plugins.js"></script>
+     <script src="../../static/js/popper.min.js"></script>
+     <script src="../../static/js/lazysizes.js"></script>
+     <script src="../../static/js/main.js"></script>
+</div>
+</body>
+
+<!-- belle/register.html   11 Nov 2019 12:22:27 GMT -->
+
+</html>

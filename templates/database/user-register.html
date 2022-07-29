@@ -1,0 +1,113 @@
+{% extends 'database/base.html' %}
+{% block title %}Register{% endblock title %}
+{% block homecorner %} {% endblock %}
+
+{% block corner %}
+        
+{% endblock %}
+
+
+{% block content %}
+        <!--Body Content-->
+        <div id="page-content">
+            <!--Page Title-->
+            <div class="page section-header text-center">
+                <div class="page-title">
+                    <div class="wrapper">
+                        <h1 class="page-width"><strong>Create an Account as User</strong></h1>
+                    </div>
+                </div>
+            </div>
+            <!--End Page Title-->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 main-col offset-md-3">
+                        <div class="mb-4">
+                            <form method="post" action="new" id="CustomerLoginForm" accept-charset="UTF-8"
+                                class="contact-form">
+                                <div class="row">
+                                    {% csrf_token %}
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="form-group">
+                                            <label for="UserName">User Name</label>
+                                            <input type="text" name="customer[user_name]" placeholder="" id="UserName"
+                                                autofocus="">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="form-group">
+                                            <label for="CustomerEmail">Email</label>
+                                            <input type="email" name="customer[email]" placeholder="" id="CustomerEmail"
+                                                class="" autocorrect="off" autocapitalize="off" autofocus="">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="form-group">
+                                            <label for="CustomerPassword">Password</label>
+                                            <input type="password" value="" name="customer[password]" placeholder=""
+                                                id="CustomerPassword" class="">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="form-group">
+                                            <label for="CustomerConfirmPassword">Confirm Password</label>
+                                            <input type="password" value="" name="customer[confirmpassword]"
+                                                placeholder="" id="CustomerConfirmPassword" class="">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="form-group">
+                                            <label for="CustomerPhoneNumber">Phone Number</label>
+                                            <input type="text" name="customer[phone_number]" placeholder=""
+                                                id="CustomerPhoneNumber" class="" autocorrect="off" autocapitalize="off"
+                                                autofocus="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="text-center col-12 col-sm-12 col-md-12 col-lg-12">
+                                        <input type="submit" class="btn mb-3" value="Create">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="text-center col-12 col-sm-12 col-md-12 col-lg-12">
+                                        <!--<input type="submit" class="btn mb-3" value="Register Now">-->
+                                        <p class="mb-4"><br><br>
+                                            
+                                            <a>Are you interested to join as a service provider?</a>
+                                            <a href="{% url 'contact_us' %}" id="provider_register_link">Register Now
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--End Body Content-->
+{% endblock %}
+
+
+        <!-- Including Jquery -->
+        <script src="../../static/js/vendor/jquery-3.3.1.min.js"></script>
+        <script src="../../static/js/vendor/jquery.cookie.js"></script>
+        <script src="../../static/js/vendor/modernizr-3.6.0.min.js"></script>
+        <script src="../../static/js/vendor/wow.min.js"></script>
+        <!-- Including Javascript -->
+        <script src="../../static/js/bootstrap.min.js"></script>
+        <script src="../../static/js/plugins.js"></script>
+        <script src="../../static/js/popper.min.js"></script>
+        <script src="../../static/js/lazysizes.js"></script>
+        <script src="../../static/js/main.js"></script>
+    </div>
+</body>
+
+<!-- belle/register.html   11 Nov 2019 12:22:27 GMT -->
+
+</html>

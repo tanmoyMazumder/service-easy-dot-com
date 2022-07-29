@@ -1,0 +1,1265 @@
+{% extends 'database/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block corner %}
+        <li><a href="{% url 'login' %}">Login</a></li>
+        <li><a href="{% url 'register' %}">Registration</a></li>
+{% endblock %}
+{% block background %} {% endblock %}
+
+{% block content %}
+        <!--Body Content-->
+        <div id="page-content">
+            <!--Home slider-->
+            <div class="slideshow slideshow-wrapper pb-section sliderFull">
+                <div class="home-slideshow">
+                    <div class="slide">
+                        <div class=" bg-size">
+                            <img class="  bg-img" data-src="../../static/images/index top 1.jpg"
+                                src="../../static/images/service01.jpg" alt="Shop Our New Collection"
+                                title="Shop Our New Collection" />
+                            <div class="slideshow__text-wrap slideshow__overlay classic bottom">
+                                <div class="slideshow__text-content center">
+                                    <div class="wrap-caption center">
+                                        <h2 class="h1 mega-title slideshow__title">Check out Our most popular Services</h2>
+                                        <span class="mega-subtitle slideshow__subtitle">Your problem, our
+                                            responsibility</span>
+                                        <!-- <span class="btn">Shop now</span> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="blur-up lazyload bg-size">
+                            <img class="blur-up lazyload bg-img"
+                                data-src="../../static/images/slideshow-banners/belle-banner2.jpg"
+                                src="../../static/images/slideshow-banners/serviceeasy.jpg" alt="ServiceEasyDotCom"
+                                title="ServiceEasyDotCom" />
+                            <div class="slideshow__text-wrap slideshow__overlay classic bottom">
+                                <div class="slideshow__text-content center">
+                                    <div class="wrap-caption center">
+                                        <h2 class="h1 mega-title slideshow__title">On new sign ups</h2>
+                                        <span class="mega-subtitle slideshow__subtitle">Save up to 20% off in every
+                                            services</span>
+                                        <!-- <span class="btn">Shop now</span> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Home slider-->
+
+            <!--Collection Tab slider-->
+            <div class="tab-slider-product section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+
+                            <div class="tabs-listing">
+
+                                <div class="tab_container">
+                                    <div id="tab1" class="tab_content grid-products">
+                                        <div class="productSlider">
+
+
+                                            <div class="col-12 item">
+                                                <!-- start product image -->
+                                                <div class="product-image">
+                                                    <!-- start product image -->
+                                                    <a href="{% url 'login' %}">
+                                                        <!-- image -->
+                                                        <img class="primary blur-up lazyload"
+                                                            data-src="../../static/images/products-2.jpg"
+                                                            src="../../static/images/products-2.jpg" alt="image"
+                                                            title="product">
+                                                        <!-- End image -->
+                                                        <!-- Hover image -->
+                                                        <img class="hover blur-up lazyload"
+                                                            data-src="../../static/images/products-2.jpg"
+                                                            src="../../static/images/products-2.jpg" alt="image"
+                                                            title="product">
+                                                        <!-- End hover image -->
+                                                        <!-- product label -->
+
+                                                    </a>
+
+                                                    <div class="button-set">
+                                                        <a href="javascript:void(0)" title="Quick View"
+                                                            class="quick-view-popup quick-view" data-toggle="modal"
+                                                            data-target="#content_quickview">
+                                                            <i class="icon anm anm-search-plus-r"></i>
+                                                        </a>
+
+                                                    </div>
+                                                    <!-- end product button -->
+                                                </div>
+                                                <!-- end product image -->
+
+                                                <!--start product details -->
+                                                <div class="product-details text-center">
+                                                    <!-- product name -->
+                                                    <div class="product-name">
+                                                        <a href="database/{% url 'login' %}">Cleaning Service</a>
+                                                    </div>
+                                                    <!-- End product name -->
+                                                    <!-- product price -->
+                                                    <div class="product-price">
+                                                        <!-- <span class="old-price">$500.00</span> -->
+                                                        <span class="price">1000.00tk</span>
+                                                    </div>
+                                                    <!-- End product price -->
+
+                                                    <div class="product-review">
+                                                        <i class="font-13 fa fa-star"></i>
+                                                        <i class="font-13 fa fa-star"></i>
+                                                        <i class="font-13 fa fa-star"></i>
+                                                        <i class="font-13 fa fa-star"></i>
+                                                        <i class="font-13 fa fa-star-o"></i>
+                                                    </div>
+
+                                                </div>
+                                                <!-- End product details -->
+                                            </div>
+                                            <div class="col-12 item">
+                                                <!-- start product image -->
+                                                <div class="product-image">
+                                                    <!-- start product image -->
+                                                    <a href="database/{% url 'login' %}">
+                                                        <!-- image check this class out-->
+                                                        <img class="primary blur-up lazyload" 
+                                                            data-src="../../static/images/products-5.jpg"
+                                                            src="../../static/images/products-5.jpg" alt="image"
+                                                            title="product">
+                                                        <!-- End image -->
+                                                        <!-- Hover image -->
+                                                        <img class="hover blur-up lazyload"
+                                                            data-src="../../static/images/products-5.jpg"
+                                                            src="../../static/images/products-5.jpg" alt="image"
+                                                            title="product">
+
+                                                    </a>
+
+                                                    <div class="button-set">
+                                                        <a href="javascript:void(0)" title="Quick View"
+                                                            class="quick-view-popup quick-view" data-toggle="modal"
+                                                            data-target="#content_quickview">
+                                                            <i class="icon anm anm-search-plus-r"></i>
+                                                        </a>
+
+                                                    </div>
+                                                    <!-- end product button -->
+                                                </div>
+                                                <!-- end product image -->
+
+                                                <!--start product details -->
+                                                <div class="product-details text-center">
+                                                    <!-- product name -->
+                                                    <div class="product-name">
+                                                        <a href="database/{% url 'login' %}">Car servicing</a>
+                                                    </div>
+                                                    <!-- End product name -->
+                                                    <!-- product price -->
+                                                    <div class="product-price">
+                                                        <!-- <span class="old-price">$500.00</span> -->
+                                                        <span class="price">starting from 500.00tk</span>
+                                                    </div>
+                                                    <!-- End product price -->
+
+                                                    <div class="product-review">
+                                                        <i class="font-13 fa fa-star"></i>
+                                                        <i class="font-13 fa fa-star"></i>
+                                                        <i class="font-13 fa fa-star"></i>
+                                                        <i class="font-13 fa fa-star"></i>
+                                                        <i class="font-13 fa fa-star-o"></i>
+                                                    </div>
+
+                                                </div>
+                                                <!-- End product details -->
+                                                <!--start product details -->
+                                                <div class="product-details text-center">
+
+                                                </div>
+                                                <!-- End product details -->
+                                            </div>
+                                            <div class="col-12 item">
+                                                <!-- start product image -->
+                                                <div class="product-image">
+                                                    <!-- start product image -->
+                                                    <a href="{% url 'login' %}">
+                                                        <!-- image -->
+                                                        <img class="primary blur-up lazyload"
+                                                            data-src="../../static/images/products-6.jpg"
+                                                            src="../../static/images/products-6.jpg" alt="image"
+                                                            title="product">
+                                                        <!-- End image -->
+                                                        <!-- Hover image -->
+                                                        <img class="hover blur-up lazyload"
+                                                            data-src="../../static/images/products-6.jpg"
+                                                            src="../../static/images/products-6.jpg" alt="image"
+                                                            title="product">
+                                                        <!-- End hover image -->
+
+                                                    </a>
+
+                                                    <div class="button-set">
+                                                        <a href="javascript:void(0)" title="Quick View"
+                                                            class="quick-view-popup quick-view" data-toggle="modal"
+                                                            data-target="#content_quickview">
+                                                            <i class="icon anm anm-search-plus-r"></i>
+                                                        </a>
+
+                                                    </div>
+                                                    <!-- end product button -->
+                                                </div>
+                                                <!-- end product image -->
+
+                                                <!--start product details -->
+                                                <div class="product-details text-center">
+                                                    <!-- product name -->
+                                                    <div class="product-name">
+                                                        <a href="{% url 'login' %}">Move & Packers</a>
+                                                    </div>
+                                                    <!-- End product name -->
+                                                    <!-- product price -->
+                                                    <div class="product-price">
+                                                        <!-- <span class="old-price">$500.00</span> -->
+                                                        <span class="price">starting from 1500.00tk</span>
+                                                    </div>
+                                                    <!-- End product price -->
+
+                                                    <div class="product-review">
+                                                        <i class="font-13 fa fa-star"></i>
+                                                        <i class="font-13 fa fa-star"></i>
+                                                        <i class="font-13 fa fa-star"></i>
+                                                        <i class="font-13 fa fa-star-o"></i>
+                                                        <i class="font-13 fa fa-star-o"></i>
+                                                    </div>
+
+                                                </div>
+                                                <!-- End product details -->
+                                                <!--start product details -->
+                                                <div class="product-details text-center">
+
+                                                </div>
+                                                <!-- End product details -->
+                                            </div>
+
+
+
+                                            <div class="col-12 item">
+                                                <!-- start product image -->
+                                                <div class="product-image">
+                                                    <!-- start product image -->
+                                                    <a href="{% url 'login' %}">
+                                                        <!-- image -->
+                                                        <img class="primary blur-up lazyload"
+                                                            data-src="../../static/images/products-7.jpg"
+                                                            src="../../static/images/products-7.jpg" alt="image"
+                                                            title="product">
+                                                        <!-- End image -->
+                                                        <!-- Hover image -->
+                                                        <img class="hover blur-up lazyload"
+                                                            data-src="../../static/images/products-7.jpg"
+                                                            src="../../static/images/products-7.jpg" alt="image"
+                                                            title="product">
+                                                        <!-- End hover image -->
+                                                    </a>
+                                                    <div class="button-set">
+                                                        <a href="javascript:void(0)" title="Quick View"
+                                                            class="quick-view-popup quick-view" data-toggle="modal"
+                                                            data-target="#content_quickview">
+                                                            <i class="icon anm anm-search-plus-r"></i>
+                                                        </a>
+                                                    </div>
+                                                    <!-- end product button -->
+                                                </div>
+                                                <!-- end product image -->
+                                                <!--start product details -->
+                                                <div class="product-details text-center">
+                                                    <!-- product name -->
+                                                    <div class="product-name">
+                                                        <a href="{% url 'login' %}">AC repairing</a>
+                                                    </div>
+                                                    <!-- End product name -->
+                                                    <!-- product price -->
+                                                    <div class="product-price">
+                                                        <!-- <span class="old-price">$500.00</span> -->
+                                                        <span class="price">starting from 850.00tk</span>
+                                                    </div>
+                                                    <!-- End product price -->
+
+                                                    <div class="product-review">
+                                                        <i class="font-13 fa fa-star"></i>
+                                                        <i class="font-13 fa fa-star"></i>
+                                                        <i class="font-13 fa fa-star"></i>
+                                                        <i class="font-13 fa fa-star"></i>
+                                                        <i class="font-13 fa fa-star-o"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="col-12 item">
+                                                <!-- start product image -->
+                                                <div class="product-image">
+                                                    <!-- start product image -->
+                                                    <a href="{% url 'login' %}">
+                                                        <!-- image -->
+                                                        <img class="primary blur-up lazyload"
+                                                            data-src="../../static/images/service-01.jfif"
+                                                            src="../../static/images/service-01.jfif" alt="image"
+                                                            title="product">
+                                                        <!-- End image -->
+                                                        <!-- Hover image -->
+                                                        <img class="hover blur-up lazyload"
+                                                            data-src="../../static/images/service-01.jfif"
+                                                            src="../../static/images/service-01.jfif" alt="image"
+                                                            title="product">
+                                                        <!-- End hover image -->
+                                                    </a>
+                                                    <div class="button-set">
+                                                        <a href="javascript:void(0)" title="Quick View"
+                                                            class="quick-view-popup quick-view" data-toggle="modal"
+                                                            data-target="#content_quickview">
+                                                            <i class="icon anm anm-search-plus-r"></i>
+                                                        </a>
+                                                    </div>
+                                                    <!-- end product button -->
+                                                </div>
+                                                <!-- end product image -->
+                                                <!--start product details -->
+                                                <div class="product-details text-center">
+                                                    <!-- product name -->
+                                                    <div class="product-name">
+                                                        <a href="{% url 'login' %}">Office service</a>
+                                                    </div>
+                                                    <!-- End product name -->
+                                                    <!-- product price -->
+                                                    <div class="product-price">
+                                                        <!-- <span class="old-price">$500.00</span> -->
+                                                        <span class="price">starting from 1200.00tk</span>
+                                                    </div>
+                                                    <!-- End product price -->
+
+                                                    <div class="product-review">
+                                                        <i class="font-13 fa fa-star"></i>
+                                                        <i class="font-13 fa fa-star"></i>
+                                                        <i class="font-13 fa fa-star"></i>
+                                                        <i class="font-13 fa fa-star-o"></i>
+                                                        <i class="font-13 fa fa-star-o"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Collection Tab slider-->
+
+
+
+
+            <!-- -----------------------------Electric & Electronics-------------------------------------------------------------- -->
+
+
+            <!--Featured Product-->
+            <div class="product-rows section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="section-header text-center">
+                                <h2 class="h2" id="E1">Electric & Electronics</h2>
+                                <p>Service by Professionals</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Mobile Service -->
+                    <div class="grid-products">
+                        <div class="row">
+
+                            <div class="col-6 col-sm-6 col-md-4 col-lg-4 item grid-view-item style2">
+                                <div class="grid-view_image">
+                                    <!-- start product image -->
+                                    <a href="{% url 'login' %}" class="grid-view-item__link">
+                                        <!-- image -->
+                                        <img class="grid-view-item__image primary blur-up lazyload"
+                                            data-src="../../static/images/servicePhoto/device-01.jfif"
+                                            src="../../static/images/servicePhoto/device-01.jfif" alt="image"
+                                            title="product">
+                                        <!-- End image -->
+                                        <!-- Hover image -->
+                                        <img class="grid-view-item__image hover blur-up lazyload"
+                                            data-src="../../static/images/servicePhoto/device-01.jfif"
+                                            src="../../static/images/servicePhoto/device-01.jfif" alt="image"
+                                            title="product">
+                                        <!-- End hover image -->
+                                        <!-- product label -->
+                                        <div class="product-labels rectangular"><span class="lbl on-sale">-15%</span>
+                                            <span class="lbl pr-label1">new</span></div>
+                                        <!-- End product label -->
+                                    </a>
+                                    <!-- end product image -->
+                                    <!--start product details -->
+                                    <div class="product-details hoverDetails text-center mobile">
+                                        <!-- product name -->
+                                        <div class="product-name">
+                                            <a href="{% url 'login' %}">Mobile servicing</a>
+                                        </div>
+                                        <!-- End product name -->
+                                        <!-- product price -->
+                                        <div class="product-price">
+                                            <span class="old-price">starts from 1000.00tk</span>
+                                            <span class="price"> starts from 500.00tk</span>
+                                        </div>
+                                        <!-- End product price -->
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+                            <!-- fan repair -->
+                            <div class="col-6 col-sm-6 col-md-4 col-lg-4 item grid-view-item style2">
+                                <div class="grid-view_image">
+                                    <!-- start product image -->
+                                    <a href="{% url 'login' %}" class="grid-view-item__link">
+                                        <!-- image -->
+                                        <img class="grid-view-item__image primary blur-up lazyload"
+                                            data-src="../../static/images/servicePhoto/fans-repair01.jpg"
+                                            src="../../static/images/servicePhoto/fans-repair01.jpg" alt="image"
+                                            title="product">
+                                        <!-- End image -->
+                                        <!-- Hover image -->
+                                        <img class="grid-view-item__image hover blur-up lazyload"
+                                            data-src="../../static/images/servicePhoto/fans-repair01.jpg"
+                                            src="../../static/images/servicePhoto/fans-repair01.jpg" alt="image"
+                                            title="product">
+                                        <!-- End hover image -->
+                                        <!-- product label -->
+                                        <!-- End product label -->
+                                    </a>
+                                    <!-- end product image -->
+                                    <!--start product details -->
+                                    <div class="product-details hoverDetails text-center mobile">
+                                        <!-- product name -->
+                                        <div class="product-name">
+                                            <a href="{% url 'login' %}">Fan Repairing</a>
+                                        </div>
+                                        <!-- End product name -->
+                                        <!-- product price -->
+                                        <div class="product-price">
+                                            <span class="price">starts from 550 tk</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Switch Board -->
+                            <div class="col-6 col-sm-6 col-md-4 col-lg-4 item grid-view-item style2">
+                                <div class="grid-view_image">
+                                    <!-- start product image -->
+                                    <a href="{% url 'login' %}" class="grid-view-item__link">
+                                        <!-- image -->
+                                        <img class="grid-view-item__image primary blur-up lazyload"
+                                            data-src="../../static/images/servicePhoto/photo_z-03.jpg"
+                                            src="../../static/images/servicePhoto/photo_z-03.jpg" alt="image"
+                                            title="product">
+                                        <!-- End image -->
+                                        <!-- Hover image -->
+                                        <img class="grid-view-item__image hover blur-up lazyload"
+                                            data-src="../../static/images/servicePhoto/photo_z-03.jpg"
+                                            src="../../static/images/product-images/servicePhoto/photo_z-03.jpg"
+                                            alt="image" title="product">
+                                        <!-- End hover image -->
+                                        <!-- product label -->
+                                        <div class="product-labels"><span class="lbl on-sale">Offer</span></div>
+                                        <!-- End product label -->
+                                    </a>
+                                    <!-- end product image -->
+                                    <!--start product details -->
+                                    <div class="product-details hoverDetails text-center mobile">
+                                        <!-- product name -->
+                                        <div class="product-name">
+                                            <a href="{% url 'login' %}">Switch Board </a>
+                                        </div>
+                                        <!-- End product name -->
+                                        <!-- product price -->
+                                        <div class="product-price">
+                                            <!-- <span class="old-price">starts from 350tk</span> -->
+                                            <span class="price">starts from 200 tk</span>
+                                        </div>
+                                        <!-- product button -->
+
+                                        <!-- end product button -->
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Geyser Servicing -->
+                            <div class="col-6 col-sm-6 col-md-4 col-lg-4 item grid-view-item style2">
+                                <div class="grid-view_image">
+                                    <!-- start product image -->
+                                    <a href="{% url 'login' %}" class="grid-view-item__link">
+                                        <!-- image -->
+                                        <img class="grid-view-item__image primary blur-up lazyload"
+                                            data-src="../../static/images/servicePhoto/photo_z-08.png"
+                                            src="../../static/images/servicePhoto/photo_z-08.png" alt="image"
+                                            title="product">
+                                        <!-- End image -->
+                                        <!-- Hover image -->
+                                        <img class="grid-view-item__image hover blur-up lazyload"
+                                            data-src="../../static/images/servicePhoto/photo_z-08.png"
+                                            src="../../static/images/servicePhoto/photo_z-08.png" alt="image"
+                                            title="product">
+                                        <!-- End hover image -->
+                                        <!-- product label -->
+                                        <div class="product-labels"><span class="lbl on-sale">Offer</span></div>
+                                        <!-- End product label -->
+                                    </a>
+                                    <!-- end product image -->
+                                    <!--start product details -->
+                                    <div class="product-details hoverDetails text-center mobile">
+                                        <!-- product name -->
+                                        <div class="product-name">
+                                            <a href="{% url 'login' %}">Geyser Servicing </a>
+                                        </div>
+                                        <!-- End product name -->
+                                        <!-- product price -->
+                                        <div class="product-price">
+                                            <span class="old-price">1200tk</span>
+                                            <span class="price">999tk</span>
+                                        </div>
+                                        <!-- product button -->
+
+                                        <!-- end product button -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Washing Machine -->
+                            <div class="col-6 col-sm-6 col-md-4 col-lg-4 item grid-view-item style2">
+                                <div class="grid-view_image">
+                                    <!-- start product image -->
+                                    <a href="{% url 'login' %}" class="grid-view-item__link">
+                                        <!-- image -->
+                                        <img class="grid-view-item__image primary blur-up lazyload"
+                                            data-src="../../static/images/servicePhoto/washing-machine01.jpg"
+                                            src="../../static/images/servicePhoto/washing-machine01.jpg" alt="image"
+                                            title="product">
+                                        <!-- End image -->
+                                        <!-- Hover image -->
+                                        <img class="grid-view-item__image hover blur-up lazyload"
+                                            data-src="../../static/images/servicePhoto/washing-machine01.jpg"
+                                            src="../../static/images/servicePhoto/washing-machine01.jpg" alt="image"
+                                            title="product">
+                                        <!-- End hover image -->
+                                        <!-- product label -->
+                                        <!-- End product label -->
+                                    </a>
+                                    <!-- end product image -->
+                                    <!--start product details -->
+                                    <div class="product-details hoverDetails text-center mobile">
+                                        <!-- product name -->
+                                        <div class="product-name">
+                                            <a href="{% url 'login' %}">Washing Machine</a>
+                                        </div>
+                                        <!-- End product name -->
+                                        <!-- product price -->
+                                        <div class="product-price">
+                                            <span class="price">Starts from 999 tk</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Featured Product-->
+
+
+                <!-- -----------------------------------Computer Solution--------------------------------------------------------- -->
+
+                <!--Featured Product-->
+                <div class="product-rows section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="section-header text-center">
+                                    <h2 class="h2" id="E2">Computer Solution</h2>
+                                    <p>Service by IT Professionals</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Desktop Repair -->
+                        <div class="grid-products">
+                            <div class="row">
+
+                                <div class="col-6 col-sm-6 col-md-4 col-lg-4 item grid-view-item style2">
+                                    <div class="grid-view_image">
+                                        <!-- start product image -->
+                                        <a href="{% url 'login' %}" class="grid-view-item__link">
+                                            <!-- image -->
+                                            <img class="grid-view-item__image primary blur-up lazyload"
+                                                data-src="../../static/images/servicePhoto/repair pc2.jpg"
+                                                src="../../static/images/servicePhoto/pc2.jpg" alt="image"
+                                                title="product">
+                                            <!-- End image -->
+                                            <!-- Hover image -->
+                                            <img class="grid-view-item__image hover blur-up lazyload"
+                                                data-src="../../static/images/servicePhoto/repair pc2.jpg"
+                                                src="../../static/images/servicePhoto/pc2.jpg" alt="image"
+                                                title="product">
+                                            <!-- End hover image -->
+                                            <!-- product label -->
+                                            <!-- <div class="product-labels rectangular"><span class="lbl on-sale">-15%</span> <span class="lbl pr-label1">new</span></div> -->
+                                            <!-- End product label -->
+                                        </a>
+                                        <!-- end product image -->
+                                        <!--start product details -->
+                                        <div class="product-details hoverDetails text-center mobile">
+                                            <!-- product name -->
+                                            <div class="product-name">
+                                                <a href="{% url 'login' %}">PC Repairing</a>
+                                            </div>
+                                            <!-- End product name -->
+                                            <!-- product price -->
+                                            <div class="product-price">
+                                                <!-- <span class="old-price">2000.00tk</span> -->
+                                                <span class="price">starts from 1450 tk</span>
+                                            </div>
+                                            <!-- End product price -->
+
+                                            <!-- product button -->
+
+                                            <!-- end product button -->
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <!-- Laptop Repairing -->
+                                <div class="col-6 col-sm-6 col-md-4 col-lg-4 item grid-view-item style2">
+                                    <div class="grid-view_image">
+                                        <!-- start product image -->
+                                        <a href="{% url 'login' %}" class="grid-view-item__link">
+                                            <!-- image -->
+                                            <img class="grid-view-item__image primary blur-up lazyload"
+                                                data-src="../../static/images/servicePhoto/repair pc1.jpg"
+                                                src="../../static/images/servicePhoto/repair pc1.jpg" alt="image"
+                                                title="product">
+                                            <!-- End image -->
+                                            <!-- Hover image -->
+                                            <img class="grid-view-item__image hover blur-up lazyload"
+                                                data-src="../../static/images/servicePhoto/repair pc1.jpg"
+                                                src="../../static/images/servicePhoto/repair pc1.jpg" alt="image"
+                                                title="product">
+                                            <!-- End hover image -->
+                                            <!-- product label -->
+                                            <!-- End product label -->
+                                        </a>
+                                        <!-- end product image -->
+                                        <!--start product details -->
+                                        <div class="product-details hoverDetails text-center mobile">
+                                            <!-- product name -->
+                                            <div class="product-name">
+                                                <a href="{% url 'login' %}">Laptop solution</a>
+                                            </div>
+                                            <!-- End product name -->
+                                            <!-- product price -->
+                                            <div class="product-price">
+                                                <span class="price">2000 tk</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- Hardware Solution -->
+                                <div class="col-6 col-sm-6 col-md-4 col-lg-4 item grid-view-item style2">
+                                    <div class="grid-view_image">
+                                        <!-- start product image -->
+                                        <a href="{% url 'login' %}" class="grid-view-item__link">
+                                            <!-- image -->
+                                            <img class="grid-view-item__image primary blur-up lazyload"
+                                                data-src="../../static/images/servicePhoto/repair pc3.jpg"
+                                                src="../../static/images/servicePhoto/repair pc3.jpg" alt="image"
+                                                title="product">
+                                            <!-- End image -->
+                                            <!-- Hover image -->
+                                            <img class="grid-view-item__image hover blur-up lazyload"
+                                                data-src="../../static/images/servicePhoto/repair pc3.jpg"
+                                                src="../../static/images/servicePhoto/repair pc3.jpg" alt="image"
+                                                title="product">
+                                            <!-- End hover image -->
+                                            <!-- product label -->
+                                            <div class="product-labels"><span class="lbl on-sale">Offer</span></div>
+                                            <!-- End product label -->
+                                        </a>
+                                        <!-- end product image -->
+                                        <!--start product details -->
+                                        <div class="product-details hoverDetails text-center mobile">
+                                            <!-- product name -->
+                                            <div class="product-name">
+                                                <a href="{% url 'login' %}">Hardware Solution </a>
+                                            </div>
+                                            <!-- End product name -->
+                                            <!-- product price -->
+                                            <div class="product-price">
+                                                <span class="old-price">starts from 2500 tk</span>
+                                                <span class="price">starts from 2000 tk</span>
+                                            </div>
+                                            <!-- product button -->
+
+                                            <!-- end product button -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Featured Product-->
+
+
+
+                    <!-- --------------------------------Cleaning Service------------------------------------------------------------ -->
+
+                    <!--Featured Product-->
+                    <div class="product-rows section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="section-header text-center">
+                                        <h2 class="h2" id="E3">Cleaning Service</h2>
+                                        <p>Service by Professionals</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- office Cleaning -->
+                            <div class="grid-products">
+                                <div class="row">
+
+                                    <div class="col-6 col-sm-6 col-md-4 col-lg-4 item grid-view-item style2">
+                                        <div class="grid-view_image">
+                                            <!-- start product image -->
+                                            <a href="{% url 'login' %}" class="grid-view-item__link">
+                                                <!-- image -->
+                                                <img class="grid-view-item__image primary blur-up lazyload"
+                                                    data-src="../../static/images/photo01.jpg"
+                                                    src="../../static/images/photo01-1.jpg" alt="image" title="product">
+                                                <!-- End image -->
+                                                <!-- Hover image -->
+                                                <img class="grid-view-item__image hover blur-up lazyload"
+                                                    data-src="../../static/images/photo01.jpg"
+                                                    src="../../static/images/photo01-1.jpg" alt="image" title="product">
+                                                <!-- End hover image -->
+                                                <!-- product label -->
+                                                <div class="product-labels rectangular"><span
+                                                        class="lbl on-sale">-15%</span> <span
+                                                        class="lbl pr-label1">new</span></div>
+                                                <!-- End product label -->
+                                            </a>
+                                            <!-- end product image -->
+                                            <!--start product details -->
+                                            <div class="product-details hoverDetails text-center mobile">
+                                                <!-- product name -->
+                                                <div class="product-name">
+                                                    <a href="{% url 'login' %}">Office Cleaning</a>
+                                                </div>
+                                                <!-- End product name -->
+                                                <!-- product price -->
+                                                <div class="product-price">
+                                                    <span class="old-price">2000.00tk</span>
+                                                    <span class="price">1700.00tk</span>
+                                                </div>
+                                                <!-- End product price -->
+
+                                                <!-- product button -->
+
+                                                <!-- end product button -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Home Cleaning -->
+                                    <div class="col-6 col-sm-6 col-md-4 col-lg-4 item grid-view-item style2">
+                                        <div class="grid-view_image">
+                                            <!-- start product image -->
+                                            <a href="{% url 'login' %}" class="grid-view-item__link">
+                                                <!-- image -->
+                                                <img class="grid-view-item__image primary blur-up lazyload"
+                                                    data-src="../../static/images/servicePhoto/photo_x-01.png"
+                                                    src="../../static/images/product-images/photo_x-01.png" alt="image"
+                                                    title="product">
+                                                <!-- End image -->
+                                                <!-- Hover image -->
+                                                <img class="grid-view-item__image hover blur-up lazyload"
+                                                    data-src="../../static/images/servicePhoto/photo_x-01.png"
+                                                    src="../../static/images/servicePhoto/photo_x-01.png" alt="image"
+                                                    title="product">
+                                                <!-- End hover image -->
+                                                <!-- product label -->
+                                                <!-- End product label -->
+                                            </a>
+                                            <!-- end product image -->
+                                            <!--start product details -->
+                                            <div class="product-details hoverDetails text-center mobile">
+                                                <!-- product name -->
+                                                <div class="product-name">
+                                                    <a href="{% url 'login' %}">Home Cleaning</a>
+                                                </div>
+                                                <!-- End product name -->
+                                                <!-- product price -->
+                                                <div class="product-price">
+                                                    <span class="price">starts from 1000 tk</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <!-- Rest Room -->
+                                    <div class="col-6 col-sm-6 col-md-4 col-lg-4 item grid-view-item style2">
+                                        <div class="grid-view_image">
+                                            <!-- start product image -->
+                                            <a href="{% url 'login' %}" class="grid-view-item__link">
+                                                <!-- image -->
+                                                <img class="grid-view-item__image primary blur-up lazyload"
+                                                    data-src="../../static/images/servicePhoto/Content-1.jpg"
+                                                    src="../../static/images/servicePhoto/Content-1.jpg" alt="image"
+                                                    title="product">
+                                                <!-- End image -->
+                                                <!-- Hover image -->
+                                                <img class="grid-view-item__image hover blur-up lazyload"
+                                                    data-src="../../static/images/servicePhoto/photo_s-01.jpg"
+                                                    src="../../static/images/product-images/servicePhoto/photo_s-01.jpg"
+                                                    alt="image" title="product">
+                                                <!-- End hover image -->
+                                                <!-- product label -->
+                                                <!-- <div class="product-labels"><span class="lbl on-sale">Offer</span></div> -->
+                                                <!-- End product label -->
+                                            </a>
+                                            <!-- end product image -->
+                                            <!--start product details -->
+                                            <div class="product-details hoverDetails text-center mobile">
+                                                <!-- product name -->
+                                                <div class="product-name">
+                                                    <a href="{% url 'login' %}">Rest Room cleaning</a>
+                                                </div>
+                                                <!-- End product name -->
+                                                <!-- product price -->
+                                                <div class="product-price">
+                                                    <!-- <span class="old-price">3500tk</span> -->
+                                                    <span class="price">starts from 950 tk</span>
+                                                </div>
+                                                <!-- product button -->
+
+                                                <!-- end product button -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Featured Product-->
+
+
+                    <!-- --------------------------------Vehicles------------------------------------------------------------ -->
+
+                    <!--Featured Product-->
+                    <div class="product-rows section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="section-header text-center">
+                                        <h2 class="h2" id="E4">Vehicles Service</h2>
+                                        <p>Service by Professionals</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Engine Repairing -->
+                            <div class="grid-products">
+                                <div class="row">
+
+                                    <div class="col-6 col-sm-6 col-md-4 col-lg-4 item grid-view-item style2">
+                                        <div class="grid-view_image">
+                                            <!-- start product image -->
+                                            <a href="{% url 'login' %}" class="grid-view-item__link">
+                                                <!-- image -->
+                                                <img class="grid-view-item__image primary blur-up lazyload"
+                                                    data-src="../../static/images/servicePhoto/car-01.webp"
+                                                    src="../../static/images/servicePhoto/car-01.webp" alt="image"
+                                                    title="product">
+                                                <!-- End image -->
+                                                <!-- Hover image -->
+                                                <img class="grid-view-item__image hover blur-up lazyload"
+                                                    data-src="../../static/images/servicePhoto/car-01.webp"
+                                                    src="../../static/images/servicePhoto/car-01.webp" alt="image"
+                                                    title="product">
+                                                <!-- End hover image -->
+                                                <!-- product label -->
+                                                <div class="product-labels rectangular"><span
+                                                        class="lbl on-sale">-15%</span> <span
+                                                        class="lbl pr-label1">new</span></div>
+                                                <!-- End product label -->
+                                            </a>
+                                            <!-- end product image -->
+                                            <!--start product details -->
+                                            <div class="product-details hoverDetails text-center mobile">
+                                                <!-- product name -->
+                                                <div class="product-name">
+                                                    <a href="{% url 'login' %}">Engine Repairing</a>
+                                                </div>
+                                                <!-- End product name -->
+                                                <!-- product price -->
+                                                <div class="product-price">
+                                                    <span class="old-price">starts from 2500 tk</span>
+                                                    <span class="price">starts from 1700 tk</span>
+                                                </div>
+                                                <!-- End product price -->
+
+                                                <!-- product button -->
+
+                                                <!-- end product button -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Car Washing -->
+                                    <div class="col-6 col-sm-6 col-md-4 col-lg-4 item grid-view-item style2">
+                                        <div class="grid-view_image">
+                                            <!-- start product image -->
+                                            <a href="{% url 'login' %}" class="grid-view-item__link">
+                                                <!-- image -->
+                                                <img class="grid-view-item__image primary blur-up lazyload"
+                                                    data-src="../../static/images/servicePhoto/car-03.jpg"
+                                                    src="../../static/images/servicePhoto/car-03.jpg" alt="image"
+                                                    title="product">
+                                                <!-- End image -->
+                                                <!-- Hover image -->
+                                                <img class="grid-view-item__image hover blur-up lazyload"
+                                                    data-src="../../static/images/servicePhoto/car-02.jpg"
+                                                    src="../../static/images/servicePhoto/car-02.jpg" alt="image"
+                                                    title="product">
+                                                <!-- End hover image -->
+                                                <!-- product label -->
+                                                <!-- End product label -->
+                                            </a>
+                                            <!-- end product image -->
+                                            <!--start product details -->
+                                            <div class="product-details hoverDetails text-center mobile">
+                                                <!-- product name -->
+                                                <div class="product-name">
+                                                    <a href="{% url 'login' %}">Car Washing</a>
+                                                </div>
+                                                <!-- End product name -->
+                                                <!-- product price -->
+                                                <div class="product-price">
+                                                    <span class="price">starts from 999 tk</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <!-- Motor Bike -->
+                                    <div class="col-6 col-sm-6 col-md-4 col-lg-4 item grid-view-item style2">
+                                        <div class="grid-view_image">
+                                            <!-- start product image -->
+                                            <a href="{% url 'login' %}" class="grid-view-item__link">
+                                                <!-- image -->
+                                                <img class="grid-view-item__image primary blur-up lazyload"
+                                                    data-src="../../static/images/servicePhoto/Bicycl (1).jpg"
+                                                    src="../../static/images/servicePhoto/Bicycl (1).jpg" alt="image"
+                                                    title="product">
+                                                <!-- End image -->
+                                                <!-- Hover image -->
+                                                <img class="grid-view-item__image hover blur-up lazyload"
+                                                    data-src="../../static/images/servicePhoto/Bicycl (2).jpg"
+                                                    src="../../static/images/product-images/servicePhoto/Bicycl (2).jpg"
+                                                    alt="image" title="product">
+                                                <!-- End hover image -->
+                                                <!-- product label -->
+                                                <!-- <div class="product-labels"><span class="lbl on-sale">Offer</span></div> -->
+                                                <!-- End product label -->
+                                            </a>
+                                            <!-- end product image -->
+                                            <!--start product details -->
+                                            <div class="product-details hoverDetails text-center mobile">
+                                                <!-- product name -->
+                                                <div class="product-name">
+                                                    <a href="{% url 'login' %}">Bike Servicing</a>
+                                                </div>
+                                                <!-- End product name -->
+                                                <!-- product price -->
+                                                <div class="product-price">
+                                                    <!-- <span class="old-price">3500tk</span> -->
+                                                    <span class="price">starts from 650 tk</span>
+                                                </div>
+                                                <!-- product button -->
+
+                                                <!-- end product button -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Featured Product-->
+
+
+                    <!-- -------------------------------------------- Shifting Services-------------------------------------------------- -->
+
+                    <!--Featured Product-->
+                    <div class="product-rows section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="section-header text-center">
+                                        <h2 class="h2" id="E5">Shifting & Packaging </h2>
+                                        <p>Service by Professionals</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pack & Parcel -->
+                            <div class="grid-products">
+                                <div class="row">
+
+                                    <div class="col-6 col-sm-6 col-md-4 col-lg-4 item grid-view-item style2">
+                                        <div class="grid-view_image">
+                                            <!-- start product image -->
+                                            <a href="{% url 'login' %}" class="grid-view-item__link">
+                                                <!-- image -->
+                                                <img class="grid-view-item__image primary blur-up lazyload"
+                                                    data-src="../../static/images/servicePhoto/service001.jpg"
+                                                    src="../../static/images/servicePhoto/service001.jpg" alt="image"
+                                                    title="product">
+                                                <!-- End image -->
+                                                <!-- Hover image -->
+                                                <img class="grid-view-item__image hover blur-up lazyload"
+                                                    data-src="../../static/images/servicePhoto/service001.jpg"
+                                                    src="../../static/images/servicePhoto/service001.jpg" alt="image"
+                                                    title="product">
+                                                <!-- End hover image -->
+                                                <!-- product label -->
+                                                <div class="product-labels rectangular"><span
+                                                        class="lbl on-sale">-15%</span> <span
+                                                        class="lbl pr-label1">new</span></div>
+                                                <!-- End product label -->
+                                            </a>
+                                            <!-- end product image -->
+                                            <!--start product details -->
+                                            <div class="product-details hoverDetails text-center mobile">
+                                                <!-- product name -->
+                                                <div class="product-name">
+                                                    <a href="{% url 'login' %}">Pack & Parcel</a>
+                                                </div>
+                                                <!-- End product name -->
+                                                <!-- product price -->
+                                                <div class="product-price">
+                                                    <span class="old-price">starts from 3000 tk</span>
+                                                    <span class="price">starts from 2000 tk</span>
+                                                </div>
+                                                <!-- End product price -->
+
+                                                <!-- product button -->
+
+                                                <!-- end product button -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Home Shifting-->
+                                    <div class="col-6 col-sm-6 col-md-4 col-lg-4 item grid-view-item style2">
+                                        <div class="grid-view_image">
+                                            <!-- start product image -->
+                                            <a href="{% url 'login' %}" class="grid-view-item__link">
+                                                <!-- image -->
+                                                <img class="grid-view-item__image primary blur-up lazyload"
+                                                    data-src="../../static/images/servicePhoto/photo_z-01.webp"
+                                                    src="../../static/images/servicePhoto/photo_z-01.webp" alt="image"
+                                                    title="product">
+                                                <!-- End image -->
+                                                <!-- Hover image -->
+                                                <img class="grid-view-item__image hover blur-up lazyload"
+                                                    data-src="../../static/images/servicePhoto/shifting-01.jpg"
+                                                    src="../../static/images/servicePhoto/shifting-01.jpg" alt="image"
+                                                    title="product">
+                                                <!-- End hover image -->
+                                                <!-- product label -->
+                                                <!-- End product label -->
+                                            </a>
+                                            <!-- end product image -->
+                                            <!--start product details -->
+                                            <div class="product-details hoverDetails text-center mobile">
+                                                <!-- product name -->
+                                                <div class="product-name">
+                                                    <a href="{% url 'login' %}">Shift Home</a>
+                                                </div>
+                                                <!-- End product name -->
+                                                <!-- product price -->
+                                                <div class="product-price">
+                                                    <span class="price">starts from 2500 tk</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <!-- Office Shifting -->
+                                    <div class="col-6 col-sm-6 col-md-4 col-lg-4 item grid-view-item style2">
+                                        <div class="grid-view_image">
+                                            <!-- start product image -->
+                                            <a href="{% url 'login' %}" class="grid-view-item__link">
+                                                <!-- image -->
+                                                <img class="grid-view-item__image primary blur-up lazyload"
+                                                    data-src="../../static/images/servicePhoto/shifting-01.jpg"
+                                                    src="../../static/images/servicePhoto/shifting-01.jpg" alt="image"
+                                                    title="product">
+                                                <!-- End image -->
+                                                <!-- Hover image -->
+                                                <img class="grid-view-item__image hover blur-up lazyload"
+                                                    data-src="../../static/images/servicePhoto/shifting 02.jpg"
+                                                    src="../../static/images/product-images/servicePhoto/shifting 02.jpg"
+                                                    alt="image" title="product">
+                                                <!-- End hover image -->
+                                                <!-- product label -->
+                                                <!-- <div class="product-labels"><span class="lbl on-sale">Offer</span></div> -->
+                                                <!-- End product label -->
+                                            </a>
+                                            <!-- end product image -->
+                                            <!--start product details -->
+                                            <div class="product-details hoverDetails text-center mobile">
+                                                <!-- product name -->
+                                                <div class="product-name">
+                                                    <a href="{% url 'login' %}">Office Shifting</a>
+                                                </div>
+                                                <!-- End product name -->
+                                                <!-- product price -->
+                                                <div class="product-price">
+                                                    <!-- <span class="old-price">3500tk</span> -->
+                                                    <span class="price">starts from 5000 tk</span>
+                                                </div>
+                                                <!-- product button -->
+
+                                                <!-- end product button -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Featured Product-->
+
+
+
+
+
+
+            
+                </div>
+                <!--End Body Content-->
+                {% endblock %}
+
+                <!-- ABAR EIKHAN THEKE -->
+                <!-- ---------------------------------Lower Body-------------------------------- -->
+                <!--Footer-->
+                    <!-- </div> -->
+                <!-- End Newsletter Popup -->
+                <!-- --------------------------End lower body---------------------------- -->
+
+                <!-- EI PORJONTO -->
+
+               <!-- End Newsletter Popup -->
+
+            <!-- Including Jquery -->
+            <script src="../../static/js/vendor/jquery-3.3.1.min.js"></script>
+            <script src="../../static/js/vendor/modernizr-3.6.0.min.js"></script>
+            <script src="../../static/js/vendor/jquery.cookie.js"></script>
+            <script src="../../static/js/vendor/wow.min.js"></script>
+            <!-- Including Javascript -->
+            <script src="../../static/js/bootstrap.min.js"></script>
+            <script src="../../static/js/plugins.js"></script>
+            <script src="../../static/js/popper.min.js"></script>
+            <script src="../../static/js/lazysizes.js"></script>
+            <script src="../../static/js/main.js"></script>
+            <!--For Newsletter Popup-->
+            <script>
+                jQuery(document).ready(function () {
+                    jQuery('.closepopup').on('click', function () {
+                        jQuery('#popup-container').fadeOut();
+                        jQuery('#modalOverly').fadeOut();
+                    });
+
+                    var visits = jQuery.cookie('visits') || 0;
+                    visits++;
+                    jQuery.cookie('visits', visits, { expires: 1, path: '/' });
+                    console.debug(jQuery.cookie('visits'));
+                    if (jQuery.cookie('visits') > 1) {
+                        jQuery('#modalOverly').hide();
+                        jQuery('#popup-container').hide();
+                    } else {
+                        var pageHeight = jQuery(document).height();
+                        jQuery('<div id="modalOverly"></div>').insertBefore('body');
+                        jQuery('#modalOverly').css("height", pageHeight);
+                        jQuery('#popup-container').show();
+                    }
+                    if (jQuery.cookie('noShowWelcome')) { jQuery('#popup-container').hide(); jQuery('#active-popup').hide(); }
+                });
+
+                jQuery(document).mouseup(function (e) {
+                    var container = jQuery('#popup-container');
+                    if (!container.is(e.target) && container.has(e.target).length === 0) {
+                        container.fadeOut();
+                        jQuery('#modalOverly').fadeIn(200);
+                        jQuery('#modalOverly').hide();
+                    }
+                });
+            </script>
+            <!--End For Newsletter Popup-->
+        </div>
+</body>
+
+<!-- belle/index.html   11 Nov 2019 12:20:55 GMT -->
+
+</html>
